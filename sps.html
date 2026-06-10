@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RockPaperScissor GAME</title>
+    <link rel="stylesheet" href="spsCS.css">
+    <script defer src="spsJS.js"></script>
+</head>
+<div id="startblock">
+<body style="font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
+  <div class="block"> <center><h1 id="title"> Guess the Rock or Paper or Scissor....!</h1></center>
+   <h2 style="margin: 8px;color: aqua;" id="name">hello player</h2>
+   <div style="position: absolute; margin: 10px;">
+    <h3 id="score" style="color: yellow;">score  : 00</h3>
+    <h3 id="highscore" style="color: rgb(0, 255, 60);position: absolute;">HighScore:00</h3>
+
+    <center>
+        <nav id="notify">
+        <h1  id="gameover">GAME OVER...!</h1>
+        <h3  id="overscore">Score:00</h3>
+        <h3  id="overhs">highscore:00</h3>
+       
+       <div style="margin-top: 20px;"> <button onclick="closer()" class="btnclose">close</button> 
+         <button onclick="tryagain()"class="btntryagain">Try again</div>
+    </nav></center>
+    
+
+   </div>
+   <center style="position:absolute;left:48%;"><h2 id="hp" style="color: green;">hp:00</h2></center>
+   
+   <center> <nav id="container">
+      <div class="names" style="display: flex; justify-content: space-between;padding: 30px;"> <h2>computer</h2><h2>you</h2></div>
+      <center><h1 id="vs">vs</h1></center>
+      <div class="compbox" style="display: flex; justify-content: space-between;padding: 40px;"> <h4  style="display: none; " id="comvalue"><p id="computervalue" >value</p></h4><h2 id="cssplayervalue" ><p id="playervalue"  ></p></h2></div>
+      <h1 id="result" style="position: relative;bottom: 60px;left: 15px;"></h1>
+
+</nav>
+
+<nav id="buttons">
+    <button id="btnrock" onclick="btnclick(event)">rock</button><button id="btnpaper" onclick="btnclick(event)">paper</button> <br><button onclick="btnclick(event)" id="btnscissor">scissor</button>
+</nav></center>
+<div id="notifyblur" style="display: block; background-color:white;position:absolute;width: 100%;height: 100%;-top:0%;bottom:0px;opacity: 50%;"></div>      
+    
+<nav id="blocking"><center>
+    <h1  class="blockingtitle">Welcome to Rock Paper Scissor Game...!</h1>
+    <button  onclick="start()" class="btnstart">START</button></center></nav>
+   </div> 
+   
+</body></div>
+</html>

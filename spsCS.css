@@ -1,0 +1,330 @@
+*{
+    margin: 0;
+}
+body{
+    background-color: purple;
+    background: linear-gradient(90deg,rgb(8, 3, 51)0%,rgb(65, 5, 107) 56%,rgb(144, 15, 196)100%);
+    color:honeydew;
+    
+    
+    
+}
+#title{
+    margin-top: 60px;
+}
+#container{
+    border: solid 4px wheat;
+    height: 300px;
+    width: 40%;
+    margin: 7vh;
+    border-radius: 30px;
+    box-shadow:0px 5px 50px #000;
+}
+#btnrock{
+    border: solid 4px blue;
+    border-radius: 100%;
+    font-size: larger;
+    padding: 10px;
+    background-color: blueviolet;
+    width: 90px;
+    height: 90px;
+    margin: 5px;
+    margin-right: 15px;
+    box-shadow:0px 5px 50px #000;
+    z-index: 3;
+    
+    
+}
+
+#btnpaper{border: solid 4px red;
+    border-radius: 100%;
+    font-size: larger;
+    padding: 10px;
+    background-color: blueviolet;
+    width: 90px;
+    height: 90px;
+    margin: 5px;
+    margin-left: 15px;
+    box-shadow:0px 5px 50px #000;}
+#btnscissor{border: solid 4px yellow;
+    border-radius: 100%;
+    font-size: larger;
+    padding: 10px;
+    background-color: blueviolet;
+    width: 90px;
+    height: 90px;
+    margin: 5px;
+    box-shadow:0px 5px 50px #000;}
+
+#cssplayervalue{
+    border: solid 4px limegreen;
+    border-radius: 100%;
+    font-size: larger;
+    padding: 10px;
+    background-color: blueviolet;
+    height:100px;width: 100px;
+     margin: 5px;
+    position: relative;
+    bottom: 35px;
+    margin-right: 30px;
+    box-shadow:0px 5px 50px #000;
+    color: black;
+    display: none;
+}
+#comvalue{
+    border: solid 4px limegreen;
+    border-radius: 100%;
+    font-size: larger;
+    padding: 10px;
+    background-color: blueviolet;
+    height: 100px;width: 100px;
+     margin: 5px;
+    position: relative;
+    bottom: 35px;
+    margin-left: 30px;
+    box-shadow:0px 5px 50px #000;
+    color: black;
+    display:none;
+    
+
+}
+
+#vs{
+    display:flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    margin-top: 55px;
+    margin-left: 300px;
+    color: red;
+    font-size:xx-large;
+    
+
+}
+
+#notify{
+    border: 2px solid lawngreen;
+    position: absolute;
+    width: 600%;
+    height: 800%;
+    left: 520px;
+    background-color:rgb(77, 2, 148);
+    margin-top: -1000%;
+    
+    z-index: 3;
+    border-radius: 30px;
+    box-shadow:0px 5px 50px #000;
+    transition: 1s;
+    
+    
+}
+.block{
+    z-index: 3;
+}
+
+startblock{
+    background-color:purple;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    
+}
+#computervalue{
+    margin-top: 32px;
+}
+#playervalue{
+    margin-top: 32px;
+}
+#gameover{
+    margin-top: 3%;font-size: xx-large;color: red;
+}
+#overscore{
+    margin: 15px;color: yellow;
+}
+#overhs{
+    margin: 8px;color: lawngreen;display: none;
+}
+.btnclose{
+    border: 0;width: 40%;height: 30px;margin-right: 10px;background-color: blueviolet;color: white;border-radius: 20px;
+}
+.btntryagain{
+    border: 0;width: 40%;height: 30px;margin-left: 10px;background-color: blueviolet;color: white;border-radius: 20px;
+}
+#blocking{
+    display: block; background-color:rgb(51, 2, 51);position:absolute;width: 100%;height: 100%;-top:0%;bottom:0px;border-bottom-right-radius: 20%;border-bottom-left-radius: 20%;transition: 2s;
+}
+.blockingtitle{
+    font-family: Arial, Helvetica, sans-serif;font-size: xx-large;margin-top: 20%; color:lime
+}
+.btnstart{
+    position: absolute;bottom: 40%;font-size: x-large;margin-right: 20px;border-radius: 30px;padding: 10px;width: 20%;margin-left: -140px;background-color: blueviolet;color: aliceblue;border: 5px rgb(64, 124, 64);border-top-style:outset;border-style: solid;
+}
+
+/*media*/
+
+@media screen and (max-width:400px){
+   body{
+    width: 300px;
+    height: 600px;
+   }
+    #title{
+    font-size: 80%;
+    
+    align-items: center;
+   }
+   #name{
+    display: none;
+   }
+   #score{
+    font-size: 70%;
+   }
+   #highscore{
+    font-size: 70%;
+    margin-top:5px;
+   }
+   #container{
+    height:200px;
+    width:70%;
+    position: relative;
+    border: 3px solid wheat;
+    margin-top: 50px;
+    margin-left: 10%;
+    align-items: center;
+    justify-content: center;
+   }
+   #hp{
+    font-size: 70%;
+    margin-top: 15px;
+   }
+   #vs{
+    font-size: 80%;
+    display: flex;
+    position: absolute;
+    right:95px;
+    bottom: 80px;
+
+   }
+   .names{
+    font-size: 50%;
+   }
+
+   #buttons{
+    font-size:10px ;
+    
+    
+   }
+   #btnrock{
+    width: 20%;
+    height: 20%;
+    font-size: 90%;
+   }
+   #btnpaper{
+    width: 20%;
+    height: 20%;
+    font-size: 90%;
+   }
+   #btnscissor{
+    width: 20%;
+    height: 20%;
+    font-size: 90%;
+   }
+   #result{
+    display: block;
+    font-size: 70%;
+    justify-content: center;
+    margin-top: 70px;
+    margin-left: -15px;
+   }
+   .compbox{
+    
+    #comvalue{
+        size: 10px;
+        font-size: 70%;
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        left:-2%;
+        bottom: 50px;
+        #computervalue{
+            margin-top: 10px;
+        }
+    }
+   }
+ #cssplayervalue{
+    size: 10px;
+        font-size: 70%;
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        right:-5%;
+        bottom: 50px;
+        #playervalue{
+            margin-top:10px;
+        }
+ }  
+ #notify{
+    margin-top: -1000%;
+    position:relative;
+    justify-content: center;
+    left: 115%;
+    width: 180%;
+    height:70px;
+    border-radius: 15px;
+    #gameover{
+        font-size:60%;
+        margin-top: 10px;
+    }
+    #overscore{
+        font-size: 50%;
+        margin-top: 3px;
+        
+    }
+    #overhs{
+        display:block;
+        font-size: 50%;
+        margin-top:-5%;
+        
+
+
+
+    }
+    .btnclose{
+    font-size: 30%;
+    width: 30%;
+    height: 10%;
+    position: absolute;
+    left: 10px;
+    bottom: 10%;
+    
+    }
+    .btntryagain{
+        font-size: 30%;
+    width: 30%;
+    height: 10%;
+    position: absolute;
+    bottom: 10%;
+    }
+ }
+ #blocking{
+    width: 100%;
+    height: 100%;
+    border-bottom-right-radius: 40%;
+    border-bottom-left-radius: 40%;
+    .blockingtitle{
+        font-size: 80%;
+        margin-top: 60%;
+    }
+    .btnstart{
+        font-size: 40%;
+        right: 33%;
+        margin-bottom: 8%;
+        
+    }
+ }
+   
+}
+
+    
+
+    
